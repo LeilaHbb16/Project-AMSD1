@@ -78,3 +78,8 @@ for model in models:
 
     # Print results
     print(f'Model: {model}\n-----\nAccuracy: {accuracy:.2f} \nF1_score: {f1:.2f} \n')
+
+    # Confusion Matrix: 
+    cm_normalized = confusion_matrix(y_test, y_pred)
+    print("Confusion Matrix:")
+    print(cm_normalized)
